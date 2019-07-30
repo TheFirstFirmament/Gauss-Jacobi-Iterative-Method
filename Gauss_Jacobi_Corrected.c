@@ -63,7 +63,7 @@ void make_diagonal_dominant(int pos)
 		sum=0.0;
 		for(lloop=0;lloop<varcount;lloop++)
 		{
-			if(kloop!=lloop)
+			if(pos!=lloop)
 			sum=sum+abs1(arr[kloop][lloop]);
 		}
 		if(sum<arr[kloop][pos])
